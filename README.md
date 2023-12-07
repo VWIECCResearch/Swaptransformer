@@ -1,11 +1,23 @@
-# IMITATION LEARNING DATA COLLECTOR
+# SWAPTRANSFORMER: HIGHWAY OVERTAKING TACTICAL PLANNER MODEL VIA IMITATION LEARNING ON OSHA DATASET 
 
-## EXPERT (Sumo)
+SwapTransformer investigates the high-level decision-making problem in highway scenarios regarding lane changing and over-taking other slower vehicles. In particular, SwapTransformer aims to improve the Travel Assist feature for automatic overtaking and lane changes on highways.
+<br />
+<br />
+
+## Data Collection
+
+## Dataset
+
+## Running SwapTransformer
+
+## Demos
+
+### EXPERT (Sumo)
 ```
 python prog_caller.py --initials <YOUR_INITIALS> --milestone <MILESTONE> --task <TASK_DEF> --proc EXPERT --record-data --speed-step 1 --steer-step 5 --num-eps 5 --virtual-speedlimit 15 --target-speed 14 --bevoffsetx 0 --maxsteps 6000 --rawdata-path <RAW_PATH> --controller SumoController
 ```
 
-## EXPERT (Human)
+### EXPERT (Human)
 ```
 python prog_caller.py --initials <YOUR_INITIALS> --milestone <MILESTONE> --task <TASK_DEF> --proc EXPERT --record-data --speed-step 1 --steer-step 5 --num-eps 5 --virtual-speedlimit 15 --target-speed 14 --bevoffsetx 0 --maxsteps 6000 --rawdata-path <RAW_PATH> --human
 ```

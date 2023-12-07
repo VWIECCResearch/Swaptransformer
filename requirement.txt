@@ -1,4 +1,4 @@
-# Python 3.8 
+# Python 3.8.0
 numpy==1.23.4
 pandas==1.5.3
 tqdm==4.64.1
@@ -24,6 +24,5 @@ efficientnet_pytorch
 plotly==5.13.1
 lightning==2.0.2
 Pillow==9.2.0
-glob
 python-xz
 efficientnet_pytorch
