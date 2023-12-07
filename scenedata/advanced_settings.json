@@ -1,0 +1,168 @@
+{
+  "TrafficPresets": {
+    "Complexity": [
+      {
+        "Level": 1,
+        "CarTypeDistribution": {
+          "Car": 1.0,
+          "Bus": 0.0,
+          "Truck": 0.0
+        },
+        "UseSingleCarModel": false,
+        "VTypeDistribution": {
+          "vTypeBase": 0.33,
+          "vTypeFast": 0.0,
+          "vTypeSlow": 0.67,
+          "vTypeAgressive": 0.0,
+          "vTypeImperfect": 0.0
+        }
+      },
+      {
+        "Level": 2,
+        "CarTypeDistribution": {
+          "Car": 1.0,
+          "Bus": 0.0,
+          "Truck": 0.0
+        },
+        "UseSingleCarModel": false,
+        "VTypeDistribution": {
+          "vTypeBase": 1.0,
+          "vTypeFast": 0.0,
+          "vTypeSlow": 0.0,
+          "vTypeAgressive": 0.0,
+          "vTypeImperfect": 0.0
+        }
+      },
+      {
+        "Level": 3,
+        "CarTypeDistribution": {
+          "Car": 0.8,
+          "Bus": 0.1,
+          "Truck": 0.1
+        },
+        "useSingleCarModel": false,
+        "VTypeDistribution": {
+          "vTypeBase": 0.8,
+          "vTypeFast": 0.1,
+          "vTypeSlow": 0.1,
+          "vTypeAgressive": 0.0,
+          "vTypeImperfect": 0.0
+        }
+      },
+      {
+        "Level": 4,
+        "CarTypeDistribution": {
+          "Car": 0.8,
+          "Bus": 0.1,
+          "Truck": 0.1
+        },
+        "UseSingleCarModel": false,
+        "VTypeDistribution": {
+          "vTypeBase": 0.6,
+          "vTypeFast": 0.1,
+          "vTypeSlow": 0.1,
+          "vTypeAgressive": 0.1,
+          "vTypeImperfect": 0.1
+        }
+      }
+    ],
+    "Density": [
+      {
+        "Level": 1,
+        "VehiclesPerRoadKm": 15,
+        "NumAdditionalCloseVehicles": 5
+      },
+      {
+        "Level": 2,
+        "VehiclesPerRoadKm": 5,
+        "NumAdditionalCloseVehicles": 5
+      },
+      {
+        "Level": 3,
+        "VehiclesPerRoadKm": 10,
+        "NumAdditionalCloseVehicles": 10
+      },
+      {
+        "Level": 4,
+        "VehiclesPerRoadKm": 20,
+        "NumAdditionalCloseVehicles": 5
+      },
+      {
+        "Level": 5,
+        "VehiclesPerRoadKm": 30,
+        "NumAdditionalCloseVehicles": 0
+      }
+    ]
+  },
+  "ObstaclePresets": {
+    "Complexity": [
+      {
+        "Level": 1,
+        "ObstacleDistribution": {
+          "StoppedVehicle": 1.0
+        }
+      }
+    ],
+    "Density": [
+      {
+        "Level": 1,
+        "ObstaclesPerRoadKm": 0.5
+      },
+      {
+        "Level": 2,
+        "ObstaclesPerRoadKm": 1
+      },
+      {
+        "Level": 3,
+        "ObstaclesPerRoadKm": 3
+      },
+      {
+        "Level": 4,
+        "ObstaclesPerRoadKm": 5
+      }
+    ]
+  },
+  "RoadNetRngPresets": {
+    "Complexity": [
+      {
+        "Level": 1,
+        "LaneSpeedGrouping": "SceneBased",
+        "LaneSpeedMin": 8.33,
+        "LaneSpeedMax": 44.44
+      },
+      {
+        "Level": 2,
+        "LaneSpeedGrouping": "EdgeBased",
+        "LaneSpeedMin": 8.33,
+        "LaneSpeedMax": 44.44
+      },
+      {
+        "Level": 3,
+        "LaneSpeedGrouping": "LaneBased",
+        "LaneSpeedMin": 8.33,
+        "LaneSpeedMax": 44.44
+      },
+      {
+        "Level": 4,
+        "LaneSpeedGrouping": "LaneBasedChaos",
+        "LaneSpeedMin": 8.33,
+        "LaneSpeedMax": 44.44
+      }
+    ]
+  },
+  "TravelAssistSettings": {
+    "MinLaneChangeActivationSpeed": 0,
+    "SignalDurationMin": 0,
+    "SignalDurationMax": 0,
+    "LaneChangeRetryDuration": 0
+  },
+  "EvaluationSettings": {
+    "RightLaneTrafficSpawnDistanceMin": 100,
+    "RightLaneTrafficSpawnDistanceMax": 100,
+    "MiddleLaneTrafficSpawnDistanceMin": 100,
+    "MiddleLaneTrafficSpawnDistanceMax": 100
+  },
+  "UISettings": {
+    "Scale": 0
+  }
+}
