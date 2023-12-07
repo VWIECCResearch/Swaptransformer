@@ -24,7 +24,5 @@ efficientnet_pytorch
 plotly==5.13.1
 lightning==2.0.2
 Pillow==9.2.0
-glob
 python-xz
 efficientnet_pytorch
-
