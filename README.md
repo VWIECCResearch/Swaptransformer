@@ -1,6 +1,8 @@
-# SWAPTRANSFORMER: HIGHWAY OVERTAKING TACTICAL PLANNER MODEL VIA IMITATION LEARNING ON OSHA DATASET 
+# SwapTransformer: Highway Overtaking Tactical Planner Model via Imitation Learning on OSHA Dataset 
 
-SwapTransformer investigates the high-level decision-making problem in highway scenarios regarding lane changing and over-taking other slower vehicles. In particular, SwapTransformer aims to improve the Travel Assist feature for automatic overtaking and lane changes on highways.
+SwapTransformer investigates the high-level decision-making problem in highway scenarios regarding lane changing and over-taking other slower vehicles. In particular, SwapTransformer aims to improve the Travel Assist feature for automatic overtaking and lane changes on highways. 9 million samples including lane images and other dynamic objects are collected in simulation. This data; Overtaking on Simulated HighwAys (OSHA) dataset is released to tackle this challenge. To solve this problem, an architecture called SwapTransformer is designed and implemented as an imitation learning approach on the OSHA dataset. The problem definition of this research can be summarized in the Figure below:
+<img src=/images/problem.png width="430" height="300"/>
+<!--- ![Alt text](/images/problem.PNG) --->
 <br />
 <br />
 
