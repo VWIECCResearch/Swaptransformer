@@ -4,7 +4,8 @@ SwapTransformer investigates the high-level decision-making problem in highway s
 <br />
 <br />
 <img src=/images/problem.png width="600" height="220"/>
-![Alt text](/images/problem.PNG)
+<br />
+![Alt text](/images/problem.png)
 <br />
 <br />
 
@@ -12,7 +13,7 @@ SwapTransformer investigates the high-level decision-making problem in highway s
 To run different parts of this repo, there is a requirement list for the Python packages which are included in the requirement.txt file. Keep in mind that all packages are tested on Python 3.8.0.
 To install all packages in your conda environment, simply create a new environment and install the packages.
 
-```bash
+```sh
 conda create --name env_swaptransformer python==3.8.0 -y
 conda activate env_swaptransformer
 pip install -r requirement.txt
