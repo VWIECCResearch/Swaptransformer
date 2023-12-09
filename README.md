@@ -27,7 +27,7 @@ Table below shows some details about the dataset collected based on the rule-bas
 More information about the dataset is availble in the paper and [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs).
 <br />
 <br />
-<img src=/images/dataset.png width="250" height="200"/>
+<img src=/images/dataset.png width="400" height="320"/>
 <br />
 
 ## Running SwapTransformer
