@@ -26,7 +26,8 @@ Data collection phase is done based on a rule-based driver. The rule-based drive
 Table below shows some details about the dataset collected based on the rule-based driver. Both raw and pre-processed data are mentioned here.
 More information about the dataset is availble in the paper and [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs).
 <br />
-<img src=/images/dataset.png width="300" height="440"/>
+<br />
+<img src=/images/dataset.png width="250" height="200"/>
 <br />
 
 ## Running SwapTransformer
