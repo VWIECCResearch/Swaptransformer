@@ -25,10 +25,29 @@ Data collection phase is done based on a rule-based driver. The rule-based drive
 ## 📖 Dataset
 Table below shows some details about the dataset collected based on the rule-based driver. Both raw and pre-processed data are mentioned here.
 More information about the dataset is availble in the paper and [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs).
+<!-- <br />
 <br />
+<img src=/images/dataset.png width="400" height="320"/> -->
+<!-- <br /> -->
 <br />
-<img src=/images/dataset.png width="400" height="320"/>
+
+|  Description | Raw Data | Processed Data|
+| ------------ | ------------ | ------------ |
+| Number of pickle files | 900 | 1 |
+| Pickle file size (single) | 34.1 MB | 61 GB |
+| Image size | 5.7 MB (episode) | 35 GB |
+| Total number of samples | 8,970,692 | 8,206,442 |
+| Lane change commands | 5,147 | 69,119 |
+| Left lane commands | 2,648 | 35,859 |
+| Right lane commands | 2,499 | 33,260 |
+| Transition commands | 0 | 1,468,115 |
+| Number of episodes | 900 | 834 |
+| Samples per episode | 10,000 | 9,839 (Average) |
+| Speed limit values | {30, 40, ..., 80} (km/h) | {30, 40, ..., 80} (km/h) |
+| Ego speed range | [0, 79.92] (km/h) | [0, 79.92] (km/h) |
+
 <br />
+
 
 ## Running SwapTransformer
 
