@@ -65,6 +65,8 @@ More information about the dataset is available in the paper and [OSHA Dataset o
 ## Running SwapTransformer
 Any user can run pre-processing and training to play with the OSHA dataset and this repo. 
 
+A reference of all arguments is available in [argparser.py](utils/argparser.py).
+
 
 ### 🧮 PREPROCESS
 [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE) shares more information about the pre-processing phase and how raw data is different than the pre-processed data. The appendix section in the paper also gives more information for pre-processing.
@@ -134,7 +136,7 @@ To run training with Pytorch lightning:
 * If you have issues with GPU memory, you may lower your batch size (`--batch-size 256`).
 * If you have issues with Pytorch distributed/parallel data processing, you may pass `0` workers to `--num-workers`.
 * If you are not using WandB for logging, you may remove `--track` and `--wandb-entity` from args.
-* For more information about training, please refer to the training section of [ArgParser](utils/argparser.py).
+* For more information about training, please refer to the training section of [argParser.py](utils/argparser.py).
 
 <br />
 
