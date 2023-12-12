@@ -29,7 +29,7 @@ pip install -r requirement.txt
 ## ⌛ Data Collection
 The data collection phase is done based on a rule-based driver. The rule-based driver is designed on top of the Sumo and Unity engine. For more information about the data collection, please read the paper.
 
-![Alt Text](https://github.com/VWIECCResearch/Swaptransformer/images/datacollection.gif)
+![Alt Text](https://github.com/VWIECCResearch/Swaptransformer/blob/main/images/datacollection.gif)
 
 ## 📖 Dataset
 The table below shows some details about the dataset collected based on the rule-based driver. Both raw and pre-processed data are mentioned here.
