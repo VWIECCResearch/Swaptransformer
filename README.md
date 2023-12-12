@@ -19,7 +19,7 @@ SwapTransformer architecture is demonstrated in Figure below. This architecture 
 
 
 ## 🛠️ Requirements
-To run different parts of this repo, there is a requirement list for the Python packages which are included in the requirement.txt file. Keep in mind that all packages are tested on Python 3.8.0.
+To run different parts of this repo, there is a requirement list for the Python packages which are included in the requirement.txt file. Keep in mind that all packages are tested on Python 3.8.0 and Ubuntu 20.04 and 22.04.
 To install all packages in your conda environment, simply create a new environment and install the packages.
 
 ```sh
@@ -61,14 +61,36 @@ More information about the dataset is available in the paper and [OSHA Dataset o
 
 
 ## Running SwapTransformer
+Any user can run pre-processing and training to play with the OSHA dataset and this repo. 
 
 
 ### 🧮 PREPROCESS
 [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE) shares more information about the pre-processing phase and how raw data is different than the pre-processed data. The appendix section in the paper also gives more information for pre-processing.
 
+The arguments below can be useful for the pre-processing:
+
+```python
+python prog_caller.py   --proc PREPROCESS \
+                        --initials <YOUR_INITIALS> \
+                        --milestone None \
+                        --task PROCESS \
+                        --rawdata-path <PATH TO RAW DATA>
+                        --processeddata-path <PATH TO SAVE PROCESSED DATA>
+                        --sim-steptime 20 \
+                        --pose-steptime 500 \
+                        --num-poses 5 \
+                        --add-lane-changes 5 \
+                        --car-network \
+                        --compress \
+                        --compresseddata-path <PATH TO SAVED COMPRESSED DATA>
+                        --compress-name <COMPRESSED NAME.tar.gz>
+                        -- multiprocess \
+                        -- num-processes 64
+```
+
 
 ### 🧠 TRAIN
-
+Pytorch lightning is also considered for parallel training and distributed data processing. However, it is possible to train without lightning.
 
 ### 📈 INFERENCE
 To evaluate inference, different baselines and the proposed approach were run on 50 different episodes for comparison. These 50 episodes of testing and inference have different traffic behavior. The table below shows some of the results:
@@ -100,9 +122,9 @@ https://github.com/VWIECCResearch/Swaptransformer/assets/152555117/3adb7d63-74d9
 
 https://github.com/VWIECCResearch/Swaptransformer/assets/152555117/08d3c0c2-c382-44dc-b885-738b92677f15
 
+More videos and top-view perspectives from inference are available in the video below:
 
-
-
+<br />
 
 
 
