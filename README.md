@@ -96,6 +96,14 @@ The grid below shows how the simulation looks like when the SwapTransformer cont
 ![Alt text](/images/inference_grid_01.png)
 <br />
 
+https://github.com/VWIECCResearch/Swaptransformer/assets/152555117/3adb7d63-74d9-4fae-8d88-d513fd6ed9cf
+https://github.com/VWIECCResearch/Swaptransformer/assets/152555117/08d3c0c2-c382-44dc-b885-738b92677f15
+
+
+
+
+
+
 
 ## 🔖 Citation
 
