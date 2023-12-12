@@ -28,7 +28,7 @@ conda activate env_swaptransformer
 pip install -r requirement.txt
 ```
 
-If you prefer to work with a prepared environment and container, a Dockerfile is written for that ([Docker File](Dockerfile)).
+If you prefer to work with a prepared environment and container, a [Dockerfile](Dockerfile) is written for that.
 
 ## ⌛ Data Collection
 The data collection phase is done based on a rule-based driver. The rule-based driver is designed on top of the Sumo and Unity engine. For more information about the data collection, please read the paper.
@@ -70,7 +70,7 @@ A reference of all arguments is available in [argparser.py](utils/argparser.py).
 
 ### 🧮 PREPROCESS
 [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE) shares more information about the pre-processing phase and how raw data is different than the pre-processed data. The appendix section in the paper also gives more information for pre-processing.
-
+The pre-processed data is already shared on [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE); however, a user can do the pre-processing on raw data.
 The arguments below can be useful for the pre-processing:
 
 ```python
@@ -136,7 +136,7 @@ To run training with Pytorch lightning:
 * If you have issues with GPU memory, you may lower your batch size (`--batch-size 256`).
 * If you have issues with Pytorch distributed/parallel data processing, you may pass `0` workers to `--num-workers`.
 * If you are not using WandB for logging, you may remove `--track` and `--wandb-entity` from args.
-* For more information about training, please refer to the training section of [argParser.py](utils/argparser.py).
+* For more information about training, please refer to the training section of [argparser.py](utils/argparser.py).
 
 <br />
 
