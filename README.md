@@ -28,6 +28,8 @@ conda activate env_swaptransformer
 pip install -r requirement.txt
 ```
 
+If you prefer to work with a prepared environment and container, a Dockerfile is written for that ([Docker File](Dockerfile)).
+
 ## ⌛ Data Collection
 The data collection phase is done based on a rule-based driver. The rule-based driver is designed on top of the Sumo and Unity engine. For more information about the data collection, please read the paper.
 
@@ -72,8 +74,8 @@ The arguments below can be useful for the pre-processing:
 ```python
 python prog_caller.py   --proc PREPROCESS \
                         --initials <YOUR_INITIALS> \
-                        --milestone None \
-                        --task PROCESS \
+                        --milestone ML \
+                        --task PREPROCESS \
                         --rawdata-path <PATH TO RAW DATA>
                         --processeddata-path <PATH TO SAVE PROCESSED DATA>
                         --sim-steptime 20 \
@@ -84,13 +86,62 @@ python prog_caller.py   --proc PREPROCESS \
                         --compress \
                         --compresseddata-path <PATH TO SAVED COMPRESSED DATA>
                         --compress-name <COMPRESSED NAME.tar.gz>
-                        -- multiprocess \
-                        -- num-processes 64
+                        --multiprocess \
+                        --num-processes 64
 ```
 
 
 ### 🧠 TRAIN
 Pytorch lightning is also considered for parallel training and distributed data processing. However, it is possible to train without lightning.
+
+To run regular training:
+```python
+python prog_caller.py   --proc TRAIN \
+                        --initials <YOUR_INITIALS>  \
+                        --milestone ML \
+                        --task Training \
+                        --bezier \
+                        --carnetwork \
+                        --travelassist-pred \
+                        --img-height 100 \
+                        --img-width 50 \
+                        --algo BC \
+                        --training-df-path <TRAINING PICKLE FILE PATH> \
+                        --training-image-path <IMAGES TRAINING PATH> \
+                        --validation-df-path <VALIDATION PICKLE FILE PATH> \
+                        --validation-image-path <IMAGES VALIDATION PATH> \
+                        --dim-input-feature 6 \
+                        --num-epoch 300 \
+                        --batch-size 256 \
+                        --val-starting-epoch 5 \
+                        --encoder resnet18 \
+                        --lr-bc 0.0001 \
+                        --residual \
+                        --base-model transformer \
+                        --track \
+                        --wandb-entity <WANDB ENTITY> \
+                        --save-model \
+                        --model-path <PATH TO SAVE MODEL>
+                        --model-saverate 10 \
+                        --num-workers 4
+```
+
+To run training with Pytorch lightning:
+
+* Replace `--proc TRAIN` with `--proc LIGHTNING`.
+* Replace `--task Training` with `--task Training_lightning`.
+* Add `--num-gpus 8` to the argument list above.
+* If you have issues with GPU memory, you may lower your batch size (`--batch-size 256`).
+* If you have issues with Pytorch distributed/parallel data processing, you may pass `0` workers to `--num-workers`.
+* If you are not using WandB for logging, you may remove `--track` and `--wandb-entity` from args.
+* For more information about training, please refer to the training section of [ArgParser](utils/argparser.py).
+
+<br />
+
+```python
+python prog_caller.py   --proc LIGHTNING \
+                        --num-gpus 8
+```
 
 ### 📈 INFERENCE
 To evaluate inference, different baselines and the proposed approach were run on 50 different episodes for comparison. These 50 episodes of testing and inference have different traffic behavior. The table below shows some of the results:
