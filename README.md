@@ -12,7 +12,9 @@ SwapTransformer investigates the high-level decision-making problem in highway s
 SwapTransformer architecture is demonstrated in Figure below. This architecture includes main tasks and auxiliary tasks. Those main tasks (lane change action and ego speed) directly interact with the travel-assist controller. Those auxiliary tasks including future trajectory estimation and the CarNetwork matrix are used as benefits for the model to better understand the agents' interactions and future decision-making. The swapping feature for the core part of the model is explained in the paper in more detail.
 
 <br />
-<img src=/images/approach_01.png width="400" height="320"/>
+<!-- <img src=/images/approach_01.png width="400" height="320"/> -->
+
+![Alt text](/images/approach_01.png)
 <br />
 
 
@@ -72,7 +74,9 @@ More information about the dataset is available in the paper and [OSHA Dataset o
 To run inference, different baselines and the proposed approach were run on 50 different episodes for comparison. These 50 episodes of testing and inference have different traffic behavior. The table below shows some of the results:
 
 <br />
-<img src=/images/inference_table.png width="580" height="200"/>
+<!-- <img src=/images/inference_table.png width="580" height="200"/> -->
+
+![Alt text](/images/inference_table.png)
 <br />
 
 <!-- |  Metrics | 1) Speed difference (m/s) ↓  | 2) Time to finish (s) ↓ | 3) Left overtake ratio ↑ | 
@@ -87,7 +91,9 @@ To run inference, different baselines and the proposed approach were run on 50 d
 ## 🎥 🚗 Demos
 The grid below shows how the simulation looks like when the SwapTransformer controls the ego vehicle. Those future pose estimations are shown in each image.
 <br />
-<img src=/images/inference_grid_01.png width="400" height="320"/>
+<!-- <img src=/images/inference_grid_01.png width="400" height="320"/> -->
+
+![Alt text](/images/inference_grid_01.png)
 <br />
 
 
