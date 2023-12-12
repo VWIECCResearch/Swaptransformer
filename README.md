@@ -5,7 +5,7 @@ SwapTransformer investigates the high-level decision-making problem in highway s
 <br />
 <img src=/images/problem.png width="600" height="220"/>
 <br />
-![Alt text](/images/problem.png)
+<!-- ![Alt text](/images/problem.png) -->
 <br />
 <br />
 
@@ -71,7 +71,7 @@ More information about the dataset is available in the paper and [OSHA Dataset o
 
 
 ### 📈 INFERENCE
-To run inference, different baselines and the proposed approach were run on 50 different episodes for comparison. These 50 episodes of testing and inference have different traffic behavior. The table below shows some of the results:
+To evaluate inference, different baselines and the proposed approach were run on 50 different episodes for comparison. These 50 episodes of testing and inference have different traffic behavior. The table below shows some of the results:
 
 <br />
 <!-- <img src=/images/inference_table.png width="580" height="200"/> -->
