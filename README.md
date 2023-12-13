@@ -179,6 +179,7 @@ More videos and top-view perspectives from inference are available in the video 
 
 <br />
 
+[![Alt text](images/sample_video.png)](https://youtu.be/gNKsLh06eAg?si=w2V5SNR1NZkN2nqC "Sample video")
 
 
 ## 🔖 Citation
