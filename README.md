@@ -37,7 +37,7 @@ The data collection phase is done based on a rule-based driver. The rule-based d
 
 ## 📖 Dataset
 The table below shows some details about the dataset collected based on the rule-based driver. Both raw and pre-processed data are mentioned here.
-More information about the dataset is available in the paper and [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE).
+More information about the dataset is available in the paper and [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/documents/osha-dataset-overtaking-simulated-highways).
 <!-- <br />
 <br />
 <img src=/images/dataset.png width="400" height="320"/> -->
@@ -69,8 +69,8 @@ A reference of all arguments is available in [argparser.py](utils/argparser.py).
 
 
 ### 🧮 PREPROCESS
-[OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE) shares more information about the pre-processing phase and how raw data is different than the pre-processed data. The appendix section in the paper also gives more information for pre-processing.
-The pre-processed data is already shared on [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/open-access/LINK_GOES_HERE); however, a user can do the pre-processing on raw data.
+[OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/documents/osha-dataset-overtaking-simulated-highways) shares more information about the pre-processing phase and how raw data is different than the pre-processed data. The appendix section in the paper also gives more information for pre-processing.
+The pre-processed data is already shared on [OSHA Dataset on IEEE Dataport](https://ieee-dataport.org/documents/osha-dataset-overtaking-simulated-highways); however, a user can do the pre-processing on raw data.
 The arguments below can be useful for the pre-processing:
 
 ```python
