@@ -19,6 +19,7 @@ SwapTransformer architecture is demonstrated in Figure below. This architecture 
 ![Alt text](/images/approach_01.png)
 <br />
 
+More information about the approach is available in the [paper](http://arxiv.org/abs/2401.01425).
 
 ## 🛠️ Requirements
 To run different parts of this repo, there is a requirement list for the Python packages which are included in the requirement.txt file. Keep in mind that all packages are tested on Python 3.8.0 and Ubuntu 20.04 and 22.04.
@@ -189,12 +190,10 @@ More videos and top-view perspectives from inference are available in the video 
 If you find this work useful, please cite our paper as follows:
 <br />
 ```
-@article{SwapTransformer2024,
-  title={SwapTransformer: Highway Overtaking Tactical Planner Model via Imitation Learning on OSHA Dataset },
-  author={Shamsoshoara, Alireza and Salih, Safin and Aghazadeh, Pedram},
-  journal={Arxiv},
-  pages={XXX YYYY},
-  year={2024},
-  publisher={Arxiv}
+@article{shamsoshoara2024swaptransformer,
+  title={SwapTransformer: highway overtaking tactical planner model via imitation learning on OSHA dataset},
+  author={Shamsoshoara, Alireza and Salih, Safin B and Aghazadeh, Pedram},
+  journal={arXiv preprint arXiv:2401.01425},
+  year={2024}
 }
 ```
